@@ -28,6 +28,9 @@ nav {
   position: sticky;
   top: 0;
   z-index: 2;
+  width: auto;
+  overflow: hidden;
+  margin-bottom: 15px;
 }
 .nav-container {
   max-width: 935px;
@@ -41,6 +44,7 @@ nav {
 nav img {
   width: 25px;
   height: 25px;
+  object-fit: cover;
 }
 .link {
   padding: 0px 0px 0px 15px;
@@ -48,23 +52,24 @@ nav img {
 .logo img {
   width: 100px;
   height: 40px;
+  object-fit: cover;
 }
-main {
+.main {
   display: grid;
   grid-template-columns: 615px 1fr;
   grid-template-rows: auto auto;
 }
 .status {
   text-align: center;
-  grid-column: 1 /2;
   background: white;
   border: 1px solid rgb(38, 38, 38, 0.2);
   border-radius: 2px;
   display: flex;
+  width: 100%;
   align-items: center;
   height: 115px;
   overflow: hidden;
-  margin-top: 30px;
+  margin: 15px 0px 15px 0px;
 }
 aside {
   grid-column: 2 /3;
@@ -95,9 +100,10 @@ aside {
   border-radius: 50%;
   border: 2px solid rgb(187, 31, 31);
   width: 60px;
+  object-fit: cover;
 }
 .post {
-  margin-top: 30px;
+  margin: 15px 0px 15px 0px;
   grid-column: 1 /2;
   background: white;
   border: 1px solid rgb(38, 38, 38, 0.2);
@@ -109,6 +115,7 @@ aside {
   width: 30px;
   border: 2px solid rgb(187, 31, 31);
   margin-right: 10px;
+  object-fit: cover;
 }
 .user-post {
   display: flex;
@@ -126,6 +133,7 @@ aside {
 .media-post img {
   max-height: 700px;
   width: 100%;
+  object-fit: cover;
 }
 .community-post {
   margin: 15px 15px 15px 15px;
@@ -207,25 +215,36 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
-  main {
-    display: grid
-    /* margin-left: auto;
-    margin-right: auto; */
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav-container {
+    margin: 0px 5px 0px 5px;
+  }
+  .status,
+  .post {
+    max-width: 615px;
   }
   aside {
     display: none;
   }
 }
 @media screen and (max-width: 640px) {
+  nav {
+    margin-bottom: 0px;
+  }
   .status {
     margin-top: 1px;
+    overflow: scroll;
   }
   .post {
     border: none;
   }
-}
-  @media screen and (max-width: 600px) {
-    nav input {
-     display: none;
-    }
+  nav input {
+    display: none;
+  }
 }
