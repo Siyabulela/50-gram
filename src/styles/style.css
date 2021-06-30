@@ -173,6 +173,10 @@ aside {
   opacity: 0.5;
   pointer-events: none;
 }
+.comment-send.valid {
+  opacity: 1;
+  pointer-events: all;
+}
 .add-comment textarea {
   width: 90%;
   border: none;
