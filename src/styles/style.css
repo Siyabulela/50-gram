@@ -68,6 +68,12 @@ nav i {
 .nav-link {
   padding: 0px 0px 0px 15px;
 }
+.nav-link img{
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+}
 .logo img {
   width: 100px;
   height: 40px;
@@ -117,6 +123,7 @@ aside {
   border-radius: 50%;
   border: 2px solid rgb(187, 31, 31);
   width: 60px;
+  height: 60px;
   object-fit: cover;
 }
 .post {
@@ -207,6 +214,8 @@ aside {
 }
 .user-details img {
   width: 60px;
+  height: 60px;
+  object-fit: cover;
   border-radius: 50%;
   border: 1px solid rgb(38, 38, 38, 0.2);
 }
@@ -224,6 +233,7 @@ aside {
 
 .suggestions-people .user-details img {
   width: 35px;
+  height: 35px;
 }
 .handle:hover{
   text-decoration: underline;
