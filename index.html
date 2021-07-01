@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="./src/styles/boxicons-2.0.7/css/boxicons.min.css">
   <link rel="icon" type="image/svg+xml" href=./src/images/insta-icon.svg />
   <link rel="alternate icon" href=./src/images/insta-icon.svg />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,85 +23,124 @@
   <nav>
     <div class="nav-container">
       <div class="logo">
-        <a href="">
+        <a href="#">
           <img src="./src/images/logo.svg" alt="" />
         </a>
       </div>
       <div class="search">
         <input type="text" placeholder="Q Search" />
       </div>
-      <div class="links">
-        <a class="link" href="">
-          <img src="./src/images/home.svg" alt="" />
+      <div class="nav-links">
+        <a class="nav-link" href="#">
+          <i class="bx bxs-home"></i>
         </a>
-        <a class="link" href="">
-          <img src="./src/images/send.png" alt="" />
+        <a class="nav-link" href="#">
+          <i class="bx bx-send"></i>
         </a>
-        <a class="link" href="">
-          <img src="./src/images/compass.png" alt="" />
+        <a class="nav-link" href="#">
+          <i class="bx bx-compass"></i>
         </a>
-        <a class="link" href="">
-          <img src="./src/images/heart.png" alt="" />
+        <a class="nav-link" href="#">
+          <i class="bx bx-heart"></i>
         </a>
-        <a class="link" href="">
-          <img src="./src/images/user.png" alt="" />
+        <a class="nav-link" href="#">
+          <i class='bx bxs-user'></i>
         </a>
       </div>
     </div>
   </nav>
   <div class="container">
     <main>
+      <!-- STATUS SECTION -->
       <div class="status">
         <div class="view">
-          <img src="./src/images/user.png" alt="" />
+          <a class="nav-link" href="#">
+            <i class="bx bxs-user"></i>
+          </a>
           <h5>any_name</h5>
         </div>
         <div class="view">
-          <img src="./src/images/user.png" alt="" />
+          <a class="nav-link" href="#">
+            <i class="bx bxs-user"></i>
+          </a>
           <h5>any_name</h5>
         </div>
         <div class="view">
-          <img src="./src/images/user.png" alt="" />
+          <a class="nav-link" href="#">
+            <i class="bx bxs-user"></i>
+          </a>
           <h5>any_name</h5>
         </div>
         <div class="view">
-          <img src="./src/images/user.png" alt="" />
+          <a class="nav-link" href="#">
+            <i class="bx bxs-user"></i>
+          </a>
           <h5>any_name</h5>
         </div>
         <div class="view">
-          <img src="./src/images/user.png" alt="" />
+          <a class="nav-link" href="#">
+            <i class="bx bxs-user"></i>
+          </a>
           <h5>any_name</h5>
         </div>
         <div class="view">
-          <img src="./src/images/user.png" alt="" />
+          <a class="nav-link" href="#">
+            <i class="bx bxs-user"></i>
+          </a>
           <h5>any_name</h5>
         </div>
         <div class="view">
-          <img src="./src/images/user.png" alt="" />
+          <a class="nav-link" href="#">
+            <i class="bx bxs-user"></i>
+          </a>
           <h5>any_name</h5>
         </div>
         <div class="view">
-          <img src="./src/images/user.png" alt="" />
+          <a class="nav-link" href="#">
+            <i class="bx bxs-user"></i>
+          </a>
+          <h5>any_name</h5>
+        </div>
+        <div class="view">
+          <a class="nav-link" href="#">
+            <i class="bx bxs-user"></i>
+          </a>
+          <h5>any_name</h5>
+        </div>
+        <div class="view">
+          <a class="nav-link" href="#">
+            <i class="bx bxs-user"></i>
+          </a>
           <h5>any_name</h5>
         </div>
       </div>
+      <!-- POST SECTION -->
       <div class="post">
         <div class="user-post">
-          <img src="./src/images/user.png" alt="" />
+          <img src="./src/images/user.svg" alt="" />
           <h5>any_name</h5>
+          <!-- H3 -->
         </div>
         <div class="media-post">
-          <img src="./src/images/post/lights.jpeg" alt="" />
+          <img src="./src/images/post/Akinte.jpeg" alt="" />
         </div>
         <div class="community-post">
           <div class="react-icons">
             <div class="first-icons">
-              <img src="./src/images/heart.png" alt="" />
-              <img src="./src/images/comment.svg" alt="" />
-              <img src="./src/images/send.png" alt="" />
+              <button>
+                <i class="bx bx-heart"></i>
+              </button>
+              <button>
+                <i class="bx bx-message-rounded"></i>
+              </button>
+              <button>
+                <i class="bx bx-send"></i>
+              </button>
             </div>
             <div class="last-icon">
-              <img src="./src/images/save.png" alt="" />
+              <button>
+                <i class="bx bx-bookmark"></i>
+              </button>
             </div>
           </div>
           <div class="views-post">100 views</div>
@@ -122,21 +162,28 @@
             </p>
           </div>
           <div class="time-posted">3 HOURS AGO</div>
-          <div class="add-comment">
+          <form class="add-comment" action="" method="post">
             <div class="comment-input">
-              <img src="./src/images/smiley.png" style="width: 30px" alt="" />
-              <textarea rows="1" placeholder="Add a comment..."></textarea>
+              <button type="button">
+                <i class="bx bx-smile"></i>
+              </button>
+             <textarea rows="1" placeholder="Add a comment..."></textarea>
             </div>
             <div class="comment-send">
-              <a href="">Post</a>
+              <button type="submit">
+                <a>Post</a>
+              </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
+      <!-- POST END -->
+      <!-- POST SECTION -->
       <div class="post">
         <div class="user-post">
-          <img src="./src/images/user.png" alt="" />
+          <img src="./src/images/user.svg" alt="" />
           <h5>any_name</h5>
+          <!-- H3 -->
         </div>
         <div class="media-post">
           <img src="./src/images/post/cat.jpeg" alt="" />
@@ -144,20 +191,28 @@
         <div class="community-post">
           <div class="react-icons">
             <div class="first-icons">
-              <img src="./src/images/heart.png" alt="" />
-              <img src="./src/images/comment.svg" alt="" />
-              <img src="./src/images/send.png" alt="" />
+              <button>
+                <i class="bx bx-heart"></i>
+              </button>
+              <button>
+                <i class="bx bx-message-rounded"></i>
+              </button>
+              <button>
+                <i class="bx bx-send"></i>
+              </button>
             </div>
             <div class="last-icon">
-              <img src="./src/images/bookmark.svg" alt="" />
+              <button>
+                <i class="bx bx-bookmark"></i>
+              </button>
             </div>
           </div>
           <div class="views-post">100 views</div>
           <div class="status-post">
             <p>
-              <span style="font-weight: bold">USER</span> Lorem ipsum dolor sit
-              amet consectetur, adipisicing elit. Sapiente aut sint atque maxime
-              ut nobis officiis nostrum eos expedita est?
+              <span style="font-weight: bold">USER</span> Lorem ipsum dolor
+              sit amet consectetur, adipisicing elit. Sapiente aut sint atque
+              maxime ut nobis officiis nostrum eos expedita est?
             </p>
           </div>
           <div class="coments-number" style="opacity: 0.5">
@@ -171,217 +226,28 @@
             </p>
           </div>
           <div class="time-posted">3 HOURS AGO</div>
-          <div class="add-comment">
+          <form class="add-comment" action="" method="post">
             <div class="comment-input">
-              <img src="./src/images/smiley.png" style="width: 30px" alt="" />
-              <textarea rows="1" placeholder="Add a comment..."></textarea>
+              <button type="button">
+                <i class="bx bx-smile"></i>
+              </button>
+             <textarea rows="1" placeholder="Add a comment..."></textarea>
             </div>
             <div class="comment-send">
-              <a href="">Post</a>
+              <button type="submit">
+                <a>Post</a>
+              </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
+      <!-- POST END -->
+      <!-- POST SECTION -->
       <div class="post">
         <div class="user-post">
-          <img src="./src/images/user.png" alt="" />
+          <img src="./src/images/user.svg" alt="" />
           <h5>any_name</h5>
-        </div>
-        <div class="media-post">
-          <img src="./src/images/post/Akinte.jpeg" alt="" />
-        </div>
-        <div class="community-post">
-          <div class="react-icons">
-            <div class="first-icons">
-              <img src="./src/images/heart.png" alt="" />
-              <img src="./src/images/comment.svg" alt="" />
-              <img src="./src/images/send.png" alt="" />
-            </div>
-            <div class="last-icon">
-              <img src="./src/images/bookmark.svg" alt="" />
-            </div>
-          </div>
-          <div class="views-post">100 views</div>
-          <div class="status-post">
-            <p>
-              <span style="font-weight: bold">USER</span> Lorem ipsum dolor sit
-              amet consectetur, adipisicing elit. Sapiente aut sint atque maxime
-              ut nobis officiis nostrum eos expedita est?
-            </p>
-          </div>
-          <div class="coments-number" style="opacity: 0.5">
-            View all 30 comments
-          </div>
-          <div class="comments-section">
-            <p>
-              <span style="font-weight: bold">Comment</span> Lorem ipsum dolor
-              sit amet consectetur, adipisicing elit. Sapiente aut sint atque
-              maxime ut nobis officiis nostrum eos expedita est?
-            </p>
-          </div>
-          <div class="time-posted">3 HOURS AGO</div>
-          <div class="add-comment">
-            <div class="comment-input">
-              <img src="./src/images/smiley.png" style="width: 30px" alt="" />
-              <textarea rows="1" placeholder="Add a comment..."></textarea>
-            </div>
-            <div class="comment-send">
-              <a href="">Post</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="post">
-        <div class="user-post">
-          <img src="./src/images/user.png" alt="" />
-          <h5>any_name</h5>
-        </div>
-        <div class="media-post">
-          <img src="./src/images/post/fati.jpeg" alt="" />
-        </div>
-        <div class="community-post">
-          <div class="react-icons">
-            <div class="first-icons">
-              <img src="./src/images/heart.png" alt="" />
-              <img src="./src/images/comment.svg" alt="" />
-              <img src="./src/images/send.png" alt="" />
-            </div>
-            <div class="last-icon">
-              <img src="./src/images/bookmark.svg" alt="" />
-            </div>
-          </div>
-          <div class="views-post">100 views</div>
-          <div class="status-post">
-            <p>
-              <span style="font-weight: bold">USER</span> Lorem ipsum dolor sit
-              amet consectetur, adipisicing elit. Sapiente aut sint atque maxime
-              ut nobis officiis nostrum eos expedita est?
-            </p>
-          </div>
-          <div class="coments-number" style="opacity: 0.5">
-            View all 30 comments
-          </div>
-          <div class="comments-section">
-            <p>
-              <span style="font-weight: bold">Comment</span> Lorem ipsum dolor
-              sit amet consectetur, adipisicing elit. Sapiente aut sint atque
-              maxime ut nobis officiis nostrum eos expedita est?
-            </p>
-          </div>
-          <div class="time-posted">3 HOURS AGO</div>
-          <div class="add-comment">
-            <div class="comment-input">
-              <img src="./src/images/smiley.png" style="width: 30px" alt="" />
-              <textarea rows="1" placeholder="Add a comment..."></textarea>
-            </div>
-            <div class="comment-send">
-              <a href="">Post</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="post">
-        <div class="user-post">
-          <img src="./src/images/user.png" alt="" />
-          <h5>any_name</h5>
-        </div>
-        <div class="media-post">
-          <img src="./src/images/post/snaps.jpeg" alt="" />
-        </div>
-        <div class="community-post">
-          <div class="react-icons">
-            <div class="first-icons">
-              <img src="./src/images/heart.png" alt="" />
-              <img src="./src/images/comment.svg" alt="" />
-              <img src="./src/images/send.png" alt="" />
-            </div>
-            <div class="last-icon">
-              <img src="./src/images/bookmark.svg" alt="" />
-            </div>
-          </div>
-          <div class="views-post">100 views</div>
-          <div class="status-post">
-            <p>
-              <span style="font-weight: bold">USER</span> Lorem ipsum dolor sit
-              amet consectetur, adipisicing elit. Sapiente aut sint atque maxime
-              ut nobis officiis nostrum eos expedita est?
-            </p>
-          </div>
-          <div class="coments-number" style="opacity: 0.5">
-            View all 30 comments
-          </div>
-          <div class="comments-section">
-            <p>
-              <span style="font-weight: bold">Comment</span> Lorem ipsum dolor
-              sit amet consectetur, adipisicing elit. Sapiente aut sint atque
-              maxime ut nobis officiis nostrum eos expedita est?
-            </p>
-          </div>
-          <div class="time-posted">3 HOURS AGO</div>
-          <div class="add-comment">
-            <div class="comment-input">
-              <img src="./src/images/smiley.png" style="width: 30px" alt="" />
-              <textarea rows="1" placeholder="Add a comment..."></textarea>
-            </div>
-            <div class="comment-send">
-              <a href="">Post</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="post">
-        <div class="user-post">
-          <img src="./src/images/user.png" alt="" />
-          <h5>any_name</h5>
-        </div>
-        <div class="media-post">
-          <img src="./src/images/post/zub.jpeg" alt="" />
-        </div>
-        <div class="community-post">
-          <div class="react-icons">
-            <div class="first-icons">
-              <img src="./src/images/heart.png" alt="" />
-              <img src="./src/images/comment.svg" alt="" />
-              <img src="./src/images/send.png" alt="" />
-            </div>
-            <div class="last-icon">
-              <img src="./src/images/bookmark.svg" alt="" />
-            </div>
-          </div>
-          <div class="views-post">100 views</div>
-          <div class="status-post">
-            <p>
-              <span style="font-weight: bold">USER</span> Lorem ipsum dolor sit
-              amet consectetur, adipisicing elit. Sapiente aut sint atque maxime
-              ut nobis officiis nostrum eos expedita est?
-            </p>
-          </div>
-          <div class="coments-number" style="opacity: 0.5">
-            View all 30 comments
-          </div>
-          <div class="comments-section">
-            <p>
-              <span style="font-weight: bold">Comment</span> Lorem ipsum dolor
-              sit amet consectetur, adipisicing elit. Sapiente aut sint atque
-              maxime ut nobis officiis nostrum eos expedita est?
-            </p>
-          </div>
-          <div class="time-posted">3 HOURS AGO</div>
-          <div class="add-comment">
-            <div class="comment-input">
-              <img src="./src/images/smiley.png" style="width: 30px" alt="" />
-              <textarea rows="1" placeholder="Add a comment..."></textarea>
-            </div>
-            <div class="comment-send">
-              <a href="">Post</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="post">
-        <div class="user-post">
-          <img src="./src/images/user.png" alt="" />
-          <h5>any_name</h5>
+          <!-- H3 -->
         </div>
         <div class="media-post">
           <img src="./src/images/post/damir.jpeg" alt="" />
@@ -389,20 +255,28 @@
         <div class="community-post">
           <div class="react-icons">
             <div class="first-icons">
-              <img src="./src/images/heart.png" alt="" />
-              <img src="./src/images/comment.svg" alt="" />
-              <img src="./src/images/send.png" alt="" />
+              <button>
+                <i class="bx bx-heart"></i>
+              </button>
+              <button>
+                <i class="bx bx-message-rounded"></i>
+              </button>
+              <button>
+                <i class="bx bx-send"></i>
+              </button>
             </div>
             <div class="last-icon">
-              <img src="./src/images/bookmark.svg" alt="" />
+              <button>
+                <i class="bx bx-bookmark"></i>
+              </button>
             </div>
           </div>
           <div class="views-post">100 views</div>
           <div class="status-post">
             <p>
-              <span style="font-weight: bold">USER</span> Lorem ipsum dolor sit
-              amet consectetur, adipisicing elit. Sapiente aut sint atque maxime
-              ut nobis officiis nostrum eos expedita est?
+              <span style="font-weight: bold">USER</span> Lorem ipsum dolor
+              sit amet consectetur, adipisicing elit. Sapiente aut sint atque
+              maxime ut nobis officiis nostrum eos expedita est?
             </p>
           </div>
           <div class="coments-number" style="opacity: 0.5">
@@ -416,105 +290,437 @@
             </p>
           </div>
           <div class="time-posted">3 HOURS AGO</div>
-          <div class="add-comment">
+          <form class="add-comment" action="" method="post">
             <div class="comment-input">
-              <img src="./src/images/smiley.png" style="width: 30px" alt="" />
-              <textarea rows="1" placeholder="Add a comment..."></textarea>
+              <button type="button">
+                <i class="bx bx-smile"></i>
+              </button>
+             <textarea rows="1" placeholder="Add a comment..."></textarea>
             </div>
             <div class="comment-send">
-              <a href="">Post</a>
+              <button type="submit">
+                <a>Post</a>
+              </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
+      <!-- POST END -->
+      <!-- POST SECTION -->
+      <div class="post">
+        <div class="user-post">
+          <img src="./src/images/user.svg" alt="" />
+          <h5>any_name</h5>
+          <!-- H3 -->
+        </div>
+        <div class="media-post">
+          <img src="./src/images/post/marek.jpeg" alt="" />
+        </div>
+        <div class="community-post">
+          <div class="react-icons">
+            <div class="first-icons">
+              <button>
+                <i class="bx bx-heart"></i>
+              </button>
+              <button>
+                <i class="bx bx-message-rounded"></i>
+              </button>
+              <button>
+                <i class="bx bx-send"></i>
+              </button>
+            </div>
+            <div class="last-icon">
+              <button>
+                <i class="bx bx-bookmark"></i>
+              </button>
+            </div>
+          </div>
+          <div class="views-post">100 views</div>
+          <div class="status-post">
+            <p>
+              <span style="font-weight: bold">USER</span> Lorem ipsum dolor
+              sit amet consectetur, adipisicing elit. Sapiente aut sint atque
+              maxime ut nobis officiis nostrum eos expedita est?
+            </p>
+          </div>
+          <div class="coments-number" style="opacity: 0.5">
+            View all 30 comments
+          </div>
+          <div class="comments-section">
+            <p>
+              <span style="font-weight: bold">Comment</span> Lorem ipsum dolor
+              sit amet consectetur, adipisicing elit. Sapiente aut sint atque
+              maxime ut nobis officiis nostrum eos expedita est?
+            </p>
+          </div>
+          <div class="time-posted">3 HOURS AGO</div>
+          <form class="add-comment" action="" method="post">
+            <div class="comment-input">
+              <button type="button">
+                <i class="bx bx-smile"></i>
+              </button>
+             <textarea rows="1" placeholder="Add a comment..."></textarea>
+            </div>
+            <div class="comment-send">
+              <button type="submit">
+                <a>Post</a>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- POST END -->
+      <!-- POST SECTION -->
+      <div class="post">
+        <div class="user-post">
+          <img src="./src/images/user.svg" alt="" />
+          <h5>any_name</h5>
+          <!-- H3 -->
+        </div>
+        <div class="media-post">
+          <img src="./src/images/post/fati.jpeg" alt="" />
+        </div>
+        <div class="community-post">
+          <div class="react-icons">
+            <div class="first-icons">
+              <button>
+                <i class="bx bx-heart"></i>
+              </button>
+              <button>
+                <i class="bx bx-message-rounded"></i>
+              </button>
+              <button>
+                <i class="bx bx-send"></i>
+              </button>
+            </div>
+            <div class="last-icon">
+              <button>
+                <i class="bx bx-bookmark"></i>
+              </button>
+            </div>
+          </div>
+          <div class="views-post">100 views</div>
+          <div class="status-post">
+            <p>
+              <span style="font-weight: bold">USER</span> Lorem ipsum dolor
+              sit amet consectetur, adipisicing elit. Sapiente aut sint atque
+              maxime ut nobis officiis nostrum eos expedita est?
+            </p>
+          </div>
+          <div class="coments-number" style="opacity: 0.5">
+            View all 30 comments
+          </div>
+          <div class="comments-section">
+            <p>
+              <span style="font-weight: bold">Comment</span> Lorem ipsum dolor
+              sit amet consectetur, adipisicing elit. Sapiente aut sint atque
+              maxime ut nobis officiis nostrum eos expedita est?
+            </p>
+          </div>
+          <div class="time-posted">3 HOURS AGO</div>
+          <form class="add-comment" action="" method="post">
+            <div class="comment-input">
+              <button type="button">
+                <i class="bx bx-smile"></i>
+              </button>
+             <textarea rows="1" placeholder="Add a comment..."></textarea>
+            </div>
+            <div class="comment-send">
+              <button type="submit">
+                <a>Post</a>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- POST END -->
+      <!-- POST SECTION -->
+      <div class="post">
+        <div class="user-post">
+          <img src="./src/images/user.svg" alt="" />
+          <h5>any_name</h5>
+          <!-- H3 -->
+        </div>
+        <div class="media-post">
+          <img src="./src/images/post/lights.jpeg" alt="" />
+        </div>
+        <div class="community-post">
+          <div class="react-icons">
+            <div class="first-icons">
+              <button>
+                <i class="bx bx-heart"></i>
+              </button>
+              <button>
+                <i class="bx bx-message-rounded"></i>
+              </button>
+              <button>
+                <i class="bx bx-send"></i>
+              </button>
+            </div>
+            <div class="last-icon">
+              <button>
+                <i class="bx bx-bookmark"></i>
+              </button>
+            </div>
+          </div>
+          <div class="views-post">100 views</div>
+          <div class="status-post">
+            <p>
+              <span style="font-weight: bold">USER</span> Lorem ipsum dolor
+              sit amet consectetur, adipisicing elit. Sapiente aut sint atque
+              maxime ut nobis officiis nostrum eos expedita est?
+            </p>
+          </div>
+          <div class="coments-number" style="opacity: 0.5">
+            View all 30 comments
+          </div>
+          <div class="comments-section">
+            <p>
+              <span style="font-weight: bold">Comment</span> Lorem ipsum dolor
+              sit amet consectetur, adipisicing elit. Sapiente aut sint atque
+              maxime ut nobis officiis nostrum eos expedita est?
+            </p>
+          </div>
+          <div class="time-posted">3 HOURS AGO</div>
+          <form class="add-comment" action="" method="post">
+            <div class="comment-input">
+              <button type="button">
+                <i class="bx bx-smile"></i>
+              </button>
+             <textarea rows="1" placeholder="Add a comment..."></textarea>
+            </div>
+            <div class="comment-send">
+              <button type="submit">
+                <a>Post</a>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- POST END -->
+      <!-- POST SECTION -->
+      <div class="post">
+        <div class="user-post">
+          <img src="./src/images/user.svg" alt="" />
+          <h5>any_name</h5>
+          <!-- H3 -->
+        </div>
+        <div class="media-post">
+          <img src="./src/images/post/snaps.jpeg" alt="" />
+        </div>
+        <div class="community-post">
+          <div class="react-icons">
+            <div class="first-icons">
+              <button>
+                <i class="bx bx-heart"></i>
+              </button>
+              <button>
+                <i class="bx bx-message-rounded"></i>
+              </button>
+              <button>
+                <i class="bx bx-send"></i>
+              </button>
+            </div>
+            <div class="last-icon">
+              <button>
+                <i class="bx bx-bookmark"></i>
+              </button>
+            </div>
+          </div>
+          <div class="views-post">100 views</div>
+          <div class="status-post">
+            <p>
+              <span style="font-weight: bold">USER</span> Lorem ipsum dolor
+              sit amet consectetur, adipisicing elit. Sapiente aut sint atque
+              maxime ut nobis officiis nostrum eos expedita est?
+            </p>
+          </div>
+          <div class="coments-number" style="opacity: 0.5">
+            View all 30 comments
+          </div>
+          <div class="comments-section">
+            <p>
+              <span style="font-weight: bold">Comment</span> Lorem ipsum dolor
+              sit amet consectetur, adipisicing elit. Sapiente aut sint atque
+              maxime ut nobis officiis nostrum eos expedita est?
+            </p>
+          </div>
+          <div class="time-posted">3 HOURS AGO</div>
+          <form class="add-comment" action="" method="post">
+            <div class="comment-input">
+              <button type="button">
+                <i class="bx bx-smile"></i>
+              </button>
+             <textarea rows="1" placeholder="Add a comment..."></textarea>
+            </div>
+            <div class="comment-send">
+              <button type="submit">
+                <a>Post</a>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- POST END -->
+      <!-- POST SECTION -->
+      <div class="post">
+        <div class="user-post">
+          <img src="./src/images/user.svg" alt="" />
+          <h5>any_name</h5>
+          <!-- H3 -->
+        </div>
+        <div class="media-post">
+          <img src="./src/images/post/zub.jpeg" alt="" />
+        </div>
+        <div class="community-post">
+          <div class="react-icons">
+            <div class="first-icons">
+              <button>
+                <i class="bx bx-heart"></i>
+              </button>
+              <button>
+                <i class="bx bx-message-rounded"></i>
+              </button>
+              <button>
+                <i class="bx bx-send"></i>
+              </button>
+            </div>
+            <div class="last-icon">
+              <button>
+                <i class="bx bx-bookmark"></i>
+              </button>
+            </div>
+          </div>
+          <div class="views-post">100 views</div>
+          <div class="status-post">
+            <p>
+              <span style="font-weight: bold">USER</span> Lorem ipsum dolor
+              sit amet consectetur, adipisicing elit. Sapiente aut sint atque
+              maxime ut nobis officiis nostrum eos expedita est?
+            </p>
+          </div>
+          <div class="coments-number" style="opacity: 0.5">
+            View all 30 comments
+          </div>
+          <div class="comments-section">
+            <p>
+              <span style="font-weight: bold">Comment</span> Lorem ipsum dolor
+              sit amet consectetur, adipisicing elit. Sapiente aut sint atque
+              maxime ut nobis officiis nostrum eos expedita est?
+            </p>
+          </div>
+          <div class="time-posted">3 HOURS AGO</div>
+          <form class="add-comment" action="" method="post">
+            <div class="comment-input">
+              <button type="button">
+                <i class="bx bx-smile"></i>
+              </button>
+             <textarea rows="1" placeholder="Add a comment..."></textarea>
+            </div>
+            <div class="comment-send">
+              <button type="submit">
+                <a>Post</a>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- POST END -->
+     
+      <!-- ASIDE -->
       <aside>
-          <div class="user-details">
-            <img src="./src/images/user.png" alt="" />
-            <div class="profile">
-              <h4 class="handle">namesurname</h5>
-                <h3 class="user-fullName" style="opacity: 0.5; font-weight: lighter">
-                  Name Surname
-                </h3>
+        <div class="user-details">
+            <a class="nav-link" href="#">
+              <i class="bx bxs-user"></i>
+            </a>
+          <div class="profile">
+            <h4 class="handle">namesurname</h5>
+              <h3 class="user-fullName" style="opacity: 0.5; font-weight: lighter">
+                Name Surname
+              </h3>
+          </div>
+          <div class="switch">
+            <a href="#">Switch</a>
+          </div>
+        </div>
+        <div class="suggestions">
+          <div class="suggestions-heading">
+            <h4 style="opacity: 0.5;">Suggestions For You</h4>
+            <h5>See All</h5>
+          </div>
+          <div class="suggestions-people">
+            <div class="user-details">
+              <img src="./src/images/user.svg" alt="" />
+              <div class="profile">
+                <h4 class="handle">namesurname</h5>
+                  <h3 class="user-fullName" style="opacity: 0.5; font-weight: lighter">
+                    Name Surname
+                  </h3>
+              </div>
+              <div class="follow">
+                <a href="#">Follow</a>
+              </div>
             </div>
-            <div class="switch">
-              <a href="">Switch</a>
+            <div class="user-details">
+              <img src="./src/images/user.svg" alt="" />
+              <div class="profile">
+                <h4 class="handle">namesurname</h5>
+                  <h3 class="user-fullName" style="opacity: 0.5; font-weight: lighter">
+                    Name Surname
+                  </h3>
+              </div>
+              <div class="follow">
+                <a href="#">Follow</a>
+              </div>
+            </div>
+            <div class="user-details">
+              <img src="./src/images/user.svg" alt="" />
+              <div class="profile">
+                <h4 class="handle">namesurname</h5>
+                  <h3 class="user-fullName" style="opacity: 0.5; font-weight: lighter">
+                    Name Surname
+                  </h3>
+              </div>
+              <div class="follow">
+                <a href="#">Follow</a>
+              </div>
+            </div>
+            <div class="user-details">
+              <img src="./src/images/user.svg" alt="" />
+              <div class="profile">
+                <h4 class="handle">namesurname</h5>
+                  <h3 class="user-fullName" style="opacity: 0.5; font-weight: lighter">
+                    Name Surname
+                  </h3>
+              </div>
+              <div class="follow">
+                <a href="#">Follow</a>
+              </div>
+            </div>
+            <div class="user-details">
+              <img src="./src/images/user.svg" alt="" />
+              <div class="profile">
+                <h4 class="handle">namesurname</h5>
+                  <h3 class="user-fullName" style="opacity: 0.5; font-weight: lighter">
+                    Name Surname
+                  </h3>
+              </div>
+              <div class="follow">
+                <a href="#">Follow</a>
+              </div>
             </div>
           </div>
-          <div class="suggestions">
-            <div class="suggestions-heading">
-              <h4 style="opacity: 0.5;">Suggestions For You</h4>
-              <h5>See All</h5>
-            </div>
-            <div class="suggestions-people">
-              <div class="user-details">
-                <img src="./src/images/user.png" alt="" />
-                <div class="profile">
-                  <h4 class="handle">namesurname</h5>
-                    <h3 class="user-fullName" style="opacity: 0.5; font-weight: lighter">
-                      Name Surname
-                    </h3>
-                </div>
-                <div class="follow">
-                  <a href="">Follow</a>
-                </div>
-              </div>
-              <div class="user-details">
-                <img src="./src/images/user.png" alt="" />
-                <div class="profile">
-                  <h4 class="handle">namesurname</h5>
-                    <h3 class="user-fullName" style="opacity: 0.5; font-weight: lighter">
-                      Name Surname
-                    </h3>
-                </div>
-                <div class="follow">
-                  <a href="">Follow</a>
-                </div>
-              </div>
-              <div class="user-details">
-                <img src="./src/images/user.png" alt="" />
-                <div class="profile">
-                  <h4 class="handle">namesurname</h5>
-                    <h3 class="user-fullName" style="opacity: 0.5; font-weight: lighter">
-                      Name Surname
-                    </h3>
-                </div>
-                <div class="follow">
-                  <a href="">Follow</a>
-                </div>
-              </div>
-              <div class="user-details">
-                <img src="./src/images/user.png" alt="" />
-                <div class="profile">
-                  <h4 class="handle">namesurname</h5>
-                    <h3 class="user-fullName" style="opacity: 0.5; font-weight: lighter">
-                      Name Surname
-                    </h3>
-                </div>
-                <div class="follow">
-                  <a href="">Follow</a>
-                </div>
-              </div>
-              <div class="user-details">
-                <img src="./src/images/user.png" alt="" />
-                <div class="profile">
-                  <h4 class="handle">namesurname</h5>
-                    <h3 class="user-fullName" style="opacity: 0.5; font-weight: lighter">
-                      Name Surname
-                    </h3>
-                </div>
-                <div class="follow">
-                  <a href="">Follow</a>
-                </div>
-              </div>
-            </div>
-            <div class="all-links">
-              <p>About . Help . Press . API . Jobs . Privacy . Terms . Locations . Top Accounts . Hashtags . Language
-              </p>
-            </div>
-            <footer>
-              <p>© 2021 INSTAGRAM FROM FACEBOOK</p>
-            </footer>
+          <div class="all-links">
+            <p>
+              <a>
+                About . Help . Press . API . Jobs . Privacy . Terms . Locations . Top Accounts . Hashtags . Language
+              </a>
+            </p>
           </div>
+          <footer>
+            <p>© 2021 INSTAGRAM FROM FACEBOOK</p>
+          </footer>
+        </div>
       </aside>
     </main>
   </div>
